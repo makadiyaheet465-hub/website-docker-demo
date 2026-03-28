@@ -14,6 +14,7 @@ pipeline {
     stages {  
         stage('Checkout') {  
             steps {  
+                
                 git branch: 'master', url: 'https://github.com/makadiyaheet465-hub/website-docker-demo.git'  
             }  
         }  
