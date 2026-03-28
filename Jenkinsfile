@@ -4,7 +4,7 @@ pipeline {
     environment {  
         AWS_REGION = 'us-east-1'  
         ECR_REPO = 'website-docker-demo'  
-        AWS_ACCOUNT_ID = '4934-9957-9318'  
+        AWS_ACCOUNT_ID = '493499579318'  
         IMAGE_TAG = "${env.BUILD_NUMBER}"  
         IMAGE_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}:${IMAGE_TAG}"  
         LATEST_URI = "${AWS_ACCOUNT_ID}.dkr.ecr.${AWS_REGION}.amazonaws.com/${ECR_REPO}:latest"  
